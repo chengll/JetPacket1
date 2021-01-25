@@ -1,0 +1,2 @@
+include ':app', ':libnavannotation', ':libnavCompiler'
+rootProject.name='JetPacket1'

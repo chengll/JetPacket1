@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".ui.ConstraintLayout1">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:src="@drawable/ic_dashboard_black_24dp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ic_home_black_24dp"
+        app:layout_constraintStart_toEndOf="@id/img1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="这是一个button,最可爱的button"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img1" />
+
+    <!--
+     constraint中当文本超出边界时，使用
+     app:layout_constrainedWidth="true"
+     app:layout_constrainedHeight="false"
+    -->
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"
+        android:text="让这个文本放在父布局的最右侧吧"
+        android:textSize="18sp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/img2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginLeft="3dp"
+        android:gravity="left"
+        android:text="sgsgsggggggggggg"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@id/button1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/button1"
+        app:layout_constraintTop_toTopOf="@id/button1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textgs"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="#ff00"
+        android:gravity="left|center_vertical"
+        android:text="beauty girl"
+        android:textSize="20sp"
+        app:layout_constraintDimensionRatio="3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button1" />
+
+    <Button
+        android:id="@+id/gonebutton"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="gone调但是还是占着空间的textView"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintDimensionRatio="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/textgs"
+        app:layout_constraintTop_toTopOf="@id/textgs" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintDimensionRatio="W,3:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/textgs"
+        app:layout_constraintTop_toBottomOf="@id/gonebutton">
+
+        <TextView
+            android:id="@+id/text_one"
+            android:layout_width="wrap_content"
+            app:layout_constraintWidth_percent="0.5"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:text="这是第一个文本"/>
+
+        <TextView
+            android:id="@+id/text_two"
+            android:layout_width="wrap_content"
+            app:layout_constraintWidth_percent="0.4"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:gravity="center_vertical"
+            android:text="这是第二个文本"/>
+
+        <TextView
+            android:id="@+id/text_three"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:text="这是第三个文本"
+            android:layout_marginRight="8dp"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:background="@color/colorAccent"
+            android:text="this is fourth text"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_constraintWidth_percent="H,16:9"
+        app:layout_constraintTop_toBottomOf="@id/linear1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        android:background="@color/colorAccent"
+        >
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
