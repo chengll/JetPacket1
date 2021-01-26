@@ -1,0 +1,23 @@
+{
+ " main/tabs/home": {
+   "isFisFragmentDestination":true,
+   "asStarter": true,
+   "needLogin": false,
+   "pageUrl": " main/tabs/home",
+   "claszName": "us.mifeng.jetpacket1.ui.home.HomeFragment"
+ },
+  " main/tabs/dash": {
+    "isFisFragmentDestination":true,
+    "asStarter": false,
+    "needLogin": false,
+    "pageUrl": " main/tabs/dash",
+    "claszName": "us.mifeng.jetpacket1.ui.home.DashboardFragment"
+  },
+  "main/tabs/notice": {
+  "isFisFragmentDestination":true,
+  "asStarter": false,
+  "needLogin": false,
+  "pageUrl": " main/tabs/dash",
+  "claszName": "us.mifeng.jetpacket1.ui.home.NotificationsFragment"
+}
+}

@@ -13,7 +13,9 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import us.mifeng.jetpacket1.R;
+import us.mifeng.libnavannotation.FragmentDestination;
 
+@FragmentDestination(pageUrl = "main/tabs/dash",asStarter = false,needLogin = false)
 public class DashboardFragment extends Fragment {
 
     private DashboardViewModel dashboardViewModel;

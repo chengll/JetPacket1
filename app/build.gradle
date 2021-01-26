@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 29
-    buildToolsVersion "30.0.3"
+    buildToolsVersion "30.0.1"
     defaultConfig {
         applicationId "us.mifeng.jetpacket1"
         minSdkVersion 19
@@ -17,6 +17,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    compileOptions {
+        sourceCompatibility "1.8"
+        targetCompatibility "1.8"
+    }
+    //sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } }
 }
 
 dependencies {
@@ -31,9 +37,12 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation project(":libnavannotation")
+    annotationProcessor project(":libnavCompiler")
+
 
     //def lifecycle_version = "2.2.0"
-   // implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0"
+    // implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0"
     //implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
 
 

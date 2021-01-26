@@ -100,7 +100,6 @@
         android:layout_height="0dp"
         android:layout_marginTop="5dp"
         android:orientation="horizontal"
-        app:layout_constraintDimensionRatio="W,3:9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@id/textgs"
         app:layout_constraintTop_toBottomOf="@id/gonebutton">
@@ -150,7 +149,8 @@
         android:id="@+id/linear2"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        app:layout_constraintWidth_percent="H,16:9"
+        android:layout_marginTop="3dp"
+        app:layout_constraintDimensionRatio="8"
         app:layout_constraintTop_toBottomOf="@id/linear1"
         app:layout_constraintStart_toStartOf="parent"
         android:orientation="vertical"
