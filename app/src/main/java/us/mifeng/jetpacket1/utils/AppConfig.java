@@ -23,6 +23,8 @@ public class AppConfig {
             String content=parseAssetsJson("nav.json");
             sDestinationMap= JSON.parseObject(content, new TypeReference<HashMap<String, Destination>>() {
             }.getType());
+
+            //json解析完成之后就可以手动创建我们的navGraph对象， 创建NavGraph对象
         }
         return sDestinationMap;
     }

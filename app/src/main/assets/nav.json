@@ -4,20 +4,23 @@
    "asStarter": true,
    "needLogin": false,
    "pageUrl": " main/tabs/home",
-   "claszName": "us.mifeng.jetpacket1.ui.home.HomeFragment"
+   "claszName": "us.mifeng.jetpacket1.ui.home.HomeFragment",
+   "id": 989999
  },
   " main/tabs/dash": {
     "isFisFragmentDestination":true,
     "asStarter": false,
     "needLogin": false,
     "pageUrl": " main/tabs/dash",
-    "claszName": "us.mifeng.jetpacket1.ui.home.DashboardFragment"
+    "claszName": "us.mifeng.jetpacket1.ui.home.DashboardFragment",
+    "id": 2323
   },
   "main/tabs/notice": {
   "isFisFragmentDestination":true,
   "asStarter": false,
   "needLogin": false,
   "pageUrl": " main/tabs/dash",
-  "claszName": "us.mifeng.jetpacket1.ui.home.NotificationsFragment"
+  "claszName": "us.mifeng.jetpacket1.ui.home.NotificationsFragment",
+    "id": 3235
 }
 }

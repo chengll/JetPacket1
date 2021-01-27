@@ -1,0 +1,27 @@
+{
+  "activeColor": "#333333",
+  "inActiveColor": "#666666",
+  "tabs": [
+    {
+      "size": 24,
+      "enable": true,
+      "index": 0,
+      "pageUrl": "main/tabs/home",
+      "title": "首页"
+    },
+    {
+      "size": 24,
+      "enable": true,
+      "index": 0,
+      "pageUrl": "main/tabs/home",
+      "title": "首页"
+    },
+    {
+      "size": 24,
+      "enable": true,
+      "index": 0,
+      "pageUrl": "main/tabs/home",
+      "title": "首页"
+    }
+  ]
+}
